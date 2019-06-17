@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DHEW_System</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tab_menu_shouye">首页</string>
+    <string name="tab_menu_faxian">发现</string>
+    <string name="tab_menu_yujing">预警</string>
+    <string name="tab_menu_wode">我的</string>
+    <string name="title_activity_home_fragment">HomeFragment</string>
+    <string name="title_activity_heart">HeartActivity</string>
+    <string name="title_activity_temp">TempActivity</string>
+    <string name="title_activity_indor_temp">IndorTempActivity</string>
+    <string name="title_activity_humidity">HumidityActivity</string>
+    <string name="title_activity_company">CompanyActivity</string>
+    <string name="title_activity_edit_car">EditCarActivity</string>
+    <string name="title_activity_edit_urge">EditUrgeActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_login_detail">LoginDetailActivity</string>
+    <string name="title_activity_login_urge">LoginUrgeActivity</string>
+    <string name="title_activity_login_verify">LoginVerifyActivity</string>
+    <string name="title_activity_my_car">MyCarActivity</string>
+    <string name="title_activity_my_info">MyInfoActivity</string>
+    <string name="title_activity_myself">MyselfActivity</string>
+    <string name="title_activity_my_urge">MyUrgeActivity</string>
+    <string name="title_activity_warn">WarnActivity</string>
+    <string name="title_activity_add_car">AddCarActivity</string>
+    <string name="title_activity_add_urge">AddUrgeActivity</string>
+
+</resources>

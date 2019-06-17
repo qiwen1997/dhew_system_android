@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/warn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF" >
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/warn_location"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/warn_layout"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            android:text="当前位置"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/location_edit"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:background="@drawable/login_editbox"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/warn_lin1"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/warn_location"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/warn_text1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="紧急联系人"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/eme_name"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/warn_lin1"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/eme_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="姓名"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/eme_name_edit"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="@drawable/login_editbox"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/eme_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/eme_name"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/eme_phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="手机"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <EditText
+            android:id="@+id/eme_phone_edit"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:background="@drawable/login_editbox"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/eme_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eme_phone"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="预警内容"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/eme_message_edit"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/eme_message_text"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_editbox"
+        android:gravity="top"
+        android:maxLines="4"
+        android:textColor="#000"
+        android:textSize="15sp" >
+    </EditText>
+    <TextView
+        android:id="@+id/send_trueorfalse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eme_message_edit"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="是否发送"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    <LinearLayout
+        android:id="@+id/send_tfbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/send_trueorfalse"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/send_truebutton"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_margin="30dp"
+            android:background="#71C671"
+            android:onClick="my_urge_ver2"
+            android:text="是"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/send_falsebutton"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_margin="30dp"
+            android:background="#71C671"
+            android:onClick="my_urge_ver2"
+            android:text="否"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/warn_location5"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/send_tfbutton"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/auto_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" "
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/auto_send_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="S后默认发送"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

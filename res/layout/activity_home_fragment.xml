@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dhew_system.HomeFragment"
+    tools:ignore="MergeRootFrame" >
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:textSize="40px"
+        android:layout_height="30dp"
+        android:text="用户名:"
+        android:textColor="#789262" />
+    <View
+                android:layout_width="wrap_content"
+                android:layout_height="5px"/>
+	<TextView
+        android:id="@+id/fenxi"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="60px"
+        android:background="@color/fenxi"
+        android:text="分析:" />
+	<View
+                android:layout_width="wrap_content"
+                android:layout_height="5px"/>
+	<TextView
+        android:id="@+id/xinlv"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="60px"
+        android:gravity="center_vertical|left"
+        android:background="@color/xinlv"
+        android:text="心率:" />
+	<View
+                android:layout_width="wrap_content"
+                android:layout_height="5px"/>
+	<TextView
+        android:id="@+id/tiwen"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="60px"
+        android:gravity="center_vertical|left"
+        android:background="@color/tiwen"
+        android:text="体温:" />
+	<View
+                android:layout_width="wrap_content"
+                android:layout_height="5px"/>
+	<TextView
+        android:id="@+id/shiwen"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="60px"
+        android:gravity="center_vertical|left"
+        android:background="@color/shiwen"
+        android:text="室温:" />
+	<View
+                android:layout_width="wrap_content"
+                android:layout_height="5px"/>
+	<TextView
+	    android:id="@+id/shidu"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:layout_gravity="center"
+	    android:background="@color/shidu"
+	    android:gravity="center_vertical|left"
+	    android:text="湿度:"
+	    android:textSize="60px" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="identity">
+        <item>私家车主</item>
+        <item>公交车主</item>
+        <item>出租车主</item>
+    </string-array>
+</resources>
